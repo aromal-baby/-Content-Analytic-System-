@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.recharts-wrapper, .recharts-surface {
+    z-index: 10 !important;
+}
+
+.modal-overlay {
+    z-index: 1000 !important;
+}
+/* Add these styles to your CSS file (style.css) */
+:root {
+    --bg-primary: #f3f4f6;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    --card-bg: #ffffff;
+    --sidebar-bg: #f3f4f6;
+    --header-bg: #ffffff;
+}
+
+.dark {
+    --bg-primary: #111827;
+    --bg-secondary: #1a1e2e;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --border-color: rgba(75, 85, 99, 0.2);
+    --card-bg: #1a1e2e;
+    --sidebar-bg: #1a1e2e;
+    --header-bg: #1a1e2e;
+}
+
+.light {
+    --bg-primary: #f3f4f6;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    --card-bg: #ffffff;
+    --sidebar-bg: #f3f4f6;
+    --header-bg: #ffffff;
+}
+
+.circular-chart {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    stroke-linecap: round;
+}
+
+.circle {
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+}
+
+/* Theme Toggle Switch */
+.theme-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-toggle.dark {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.theme-toggle.light {
+    background: linear-gradient(to right, #f59e0b, #ef4444);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.toggle-thumb {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111827;
+}
+
+.theme-toggle.dark .toggle-thumb {
+    left: calc(100% - 28px);
+}
+
+.toggle-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-icon.visible {
+    opacity: 1;
+}
