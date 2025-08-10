@@ -25,7 +25,7 @@ The Docker implementation includes:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/content-analytics-system.git
+git clone https://github.com/aromal-baby/-Content-Analytic-System-.git
 cd content-analytics-system
 ```
 
