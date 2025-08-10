@@ -109,4 +109,4 @@ docker-compose logs -f app
 
 
 ## Video: 
-[Watch how this works](https://studio.youtube.com/video/jmX1ecudvDE/edit](https://youtu.be/jmX1ecudvDE?si=Yvbw_2X6TDYlQsn_)
+[Watch how this works](https://youtu.be/jmX1ecudvDE?si=Yvbw_2X6TDYlQsn_)
