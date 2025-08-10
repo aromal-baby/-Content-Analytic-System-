@@ -102,3 +102,11 @@ docker-compose logs -f app
 - For database issues: `docker-compose logs mysql` or `docker-compose logs mongodb`
 - To rebuild the application: `docker-compose build app`
 - To restart all services: `docker-compose restart`
+
+
+## Screenshots :
+
+
+
+## Video: 
+![Watch how this works]{https://studio.youtube.com/video/jmX1ecudvDE/edit}
